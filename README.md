@@ -1,6 +1,6 @@
 # Remote Desktop SW
 
-A lightweight Windows system tray utility designed for Remote Desktop (RDP) environments, enabling easy virtual desktop switching during remote sessions.
+A lightweight Windows system tray utility designed for AI-powered development workflows with multiple Windows machines. Switch across multiple computers via RDP with a single hotkey, and quickly paste screenshots as file paths into CLI-based IDEs (e.g., Claude Code, Cursor Terminal) for rapid visual feedback.
 
 [中文文档](README_CN.md)
 

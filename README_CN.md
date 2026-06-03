@@ -1,6 +1,6 @@
 # Remote Desktop SW - Windows 虚拟桌面切换工具
 
-一款轻量级的 Windows 系统托盘工具，专为远程桌面（RDP）环境设计，让你在远程桌面会话中也能方便地切换虚拟桌面。
+一款专为 AI 编程工作流打造的轻量级 Windows 系统托盘工具。支持多台 Windows 电脑同时开工，通过快捷键一键切换远程桌面；内置截图转文件地址功能，可快速向 CLI 类 IDE（如 Claude Code、Cursor Terminal）粘贴截图反馈问题。
 
 [English](README.md)
 
