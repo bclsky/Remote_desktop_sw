@@ -4,6 +4,10 @@ A lightweight Windows system tray utility designed for Remote Desktop (RDP) envi
 
 [中文文档](README_CN.md)
 
+## Download
+
+⬇️ [Download v1.0.0](https://github.com/bclsky/Remote_desktop_sw/releases/tag/v1.0.0)
+
 ## Features
 
 - **Hotkey Desktop Switching** — Switch desktops with `Ctrl+Alt+←` / `Ctrl+Alt+→` by default, fully customizable

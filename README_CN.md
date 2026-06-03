@@ -4,6 +4,10 @@
 
 [English](README.md)
 
+## 下载
+
+⬇️ [下载 v1.0.0](https://github.com/bclsky/Remote_desktop_sw/releases/tag/v1.0.0)
+
 ## 功能特性
 
 - **快捷键切换虚拟桌面** — 默认 `Ctrl+Alt+←` / `Ctrl+Alt+→` 切换左右桌面，可自定义
