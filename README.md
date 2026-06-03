@@ -69,10 +69,14 @@ AutoHotkey v2 notation:
 Remote_desktop_sw_Win10/
 ├── Remote_desktop_sw.exe   # Compiled executable
 ├── Remote_desktop_sw.ahk   # AutoHotkey v2 source code
-├── VirtualDesktop.exe      # Virtual desktop switching helper
+├── VirtualDesktop.exe      # Virtual desktop switching helper (can be replaced, see below)
 ├── favicon.ico             # Tray icon
 └── settings.ini            # User config (auto-generated on first run)
 ```
+
+## Replacing VirtualDesktop.exe
+
+The bundled `VirtualDesktop.exe` is version-specific. For compatibility with other Windows versions (e.g., Windows 11, Windows Server), you can download the latest release from the [VirtualDesktop](https://github.com/MScholtes/VirtualDesktop) project and replace the file in this directory.
 
 ## License
 

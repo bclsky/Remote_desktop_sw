@@ -69,10 +69,14 @@ AutoHotkey v2 热键表示法：
 Remote_desktop_sw_Win10/
 ├── Remote_desktop_sw.exe   # 编译后的可执行文件
 ├── Remote_desktop_sw.ahk   # AutoHotkey v2 源代码
-├── VirtualDesktop.exe      # 虚拟桌面切换辅助程序
+├── VirtualDesktop.exe      # 虚拟桌面切换辅助程序（可替换，见下方说明）
 ├── favicon.ico             # 托盘图标
 └── settings.ini            # 用户配置（运行后自动生成）
 ```
+
+## 替换 VirtualDesktop.exe
+
+自带的 `VirtualDesktop.exe` 与系统版本相关。如需兼容其他 Windows 版本（如 Windows 11、Windows Server），可从 [VirtualDesktop](https://github.com/MScholtes/VirtualDesktop) 项目下载最新版本，替换本目录中的文件即可。
 
 ## 许可证
 
