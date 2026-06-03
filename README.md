@@ -19,7 +19,7 @@ A lightweight Windows system tray utility designed for Remote Desktop (RDP) envi
 
 ## System Requirements
 
-- Windows 10
+- Windows 10 / Windows 11
 - No AutoHotkey installation required — just run `Remote_desktop_sw.exe`
 
 ## Usage

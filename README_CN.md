@@ -19,7 +19,7 @@
 
 ## 系统要求
 
-- Windows 10
+- Windows 10 / Windows 11
 - 无需安装 AutoHotkey，直接运行 `Remote_desktop_sw.exe` 即可
 
 ## 使用方法
