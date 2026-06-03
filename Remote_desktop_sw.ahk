@@ -1,8 +1,7 @@
 #Requires AutoHotkey v2.0
 
-; 编译时嵌入 VirtualDesktop.exe，运行时释放到临时目录
-VD_EXE := A_Temp "\RemoteDesktopSW_VirtualDesktop.exe"
-FileInstall("VirtualDesktop.exe", VD_EXE, true)
+; VirtualDesktop.exe 放在脚本同目录，直接引用
+VD_EXE := A_ScriptDir "\VirtualDesktop.exe"
 INI_PATH := A_ScriptDir "\settings.ini"
 
 ; 读取热键配置（默认 Ctrl+Alt+Left/Right）
@@ -126,7 +125,7 @@ GetDesktopInfo() {
             break
         }
     }
-    return {current: current + 1, total: total}
+    return {current: current, total: total}
 }
 
 ; ========== 设置 GUI ==========
