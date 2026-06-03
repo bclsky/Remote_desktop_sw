@@ -126,7 +126,7 @@ GetDesktopInfo() {
             break
         }
     }
-    return {current: current, total: total}
+    return {current: current + 1, total: total}
 }
 
 ; ========== 设置 GUI ==========
@@ -188,7 +188,7 @@ SaveHotkeys(*) {
     ; 注册新热键
     RegisterHotkeys()
 
-    ShowDesktopToast("快捷键已保存，立即生效")
+    ShowDesktopToast("快捷键已保存")
     settingsGui := ""  ; 关闭窗口后允许重新创建
 }
 
