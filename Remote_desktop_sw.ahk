@@ -102,30 +102,13 @@ ShowDesktopToast(displayText := "") {
 
 GetDesktopInfo() {
     try {
-        allIds := RegRead("HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VirtualDesktops", "VirtualDesktopIDs")
-        currentId := ""
-        loop Reg "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\SessionInfo", "K" {
-            try {
-                currentId := RegRead("HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\SessionInfo\" A_LoopRegName "\VirtualDesktops", "CurrentVirtualDesktop")
-                break
-            } catch {
-                continue
-            }
-        }
-        if !currentId
-            return {current: 0, total: 0}
+        shell := ComObject("WScript.Shell")
+        total := shell.Run('"' VD_EXE '" /Q /Count', 0, true)
+        current := shell.Run('"' VD_EXE '" /Q /GetCurrentDesktop', 0, true) + 1
+        return {current: current, total: total}
     } catch {
         return {current: 0, total: 0}
     }
-    total := StrLen(allIds) // 32
-    current := 0
-    Loop total {
-        if (SubStr(allIds, (A_Index - 1) * 32 + 1, 32) = currentId) {
-            current := A_Index
-            break
-        }
-    }
-    return {current: current, total: total}
 }
 
 ; ========== 设置 GUI ==========
